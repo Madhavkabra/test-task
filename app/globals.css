@@ -5,12 +5,14 @@
   --background: #ffffff;
   --foreground: #171717;
   --color-white: #ffffff;
-  --primary-color: #006FE8;
+  --primary-color: #006fe8;
   --color-nav-text: #8c97a8;
-  --color-gray-900: #1D2026;
-  --color-border-button: #6C788F;
+  --color-gray-900: #1d2026;
+  --color-border-button: #6c788f;
   --shadow-header: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  --font-general-sans: 'GeneralSans-Variable', 'GeneralSans-Regular', 'GeneralSans-Medium', 'GeneralSans-Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-general-sans: "GeneralSans-Variable", "GeneralSans-Regular",
+    "GeneralSans-Medium", "GeneralSans-Bold", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
 }
 
 @theme {
@@ -50,6 +52,37 @@ body {
   }
 }
 
+@keyframes flyDiagonalBottomLeftToTopRight {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    transform: translate(calc(100vw + 100px), calc(-30vh - 50px));
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes flyDiagonalBottomRightToTopLeft {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  to {
+    transform: translate(calc(-100vw - 100px), calc(-30vh - 50px));
+    opacity: 0;
+    display: none;
+  }
+}
+
 .animate-fly-from-bottom {
   --bird-final-opacity: 1;
   animation: flyFromBottom 1.5s ease-out forwards;
@@ -58,4 +91,14 @@ body {
 
 .animate-fly-from-bottom.opacity-60 {
   --bird-final-opacity: 0.6;
+}
+
+.animate-fly-diagonal-left {
+  animation: flyDiagonalBottomLeftToTopRight 4s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fly-diagonal-right {
+  animation: flyDiagonalBottomRightToTopLeft 4s ease-out forwards;
+  opacity: 0;
 }

@@ -36,6 +36,18 @@ export default function HeroBirds() {
       <div className="absolute top-[882px] left-[1577px]">
         <FlyingBird_4 />
       </div>
+
+      {/* Animated FlyingBird_3 from left and right diagonally */}
+      <div
+        className="absolute bottom-0 left-0 animate-fly-diagonal-left duration-200"
+      >
+        <FlyingBird_3 />
+      </div>
+      <div
+        className="absolute bottom-0 right-0 animate-fly-diagonal-right duration-200"
+      >
+        <FlyingBird_3 />
+      </div>
     </div>
   );
 }
