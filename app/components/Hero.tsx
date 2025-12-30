@@ -8,6 +8,7 @@ import HeroDescription from "./Hero/HeroDescription";
 import HeroCTAs from "./Hero/HeroCTAs";
 import HeroClouds from "./Hero/HeroClouds";
 import ScrollIndicator from "./Hero/ScrollIndicator";
+import Ellipse from "../assets/icons/Ellipse";
 
 export default function Hero() {
   return (
@@ -19,6 +20,9 @@ export default function Hero() {
           "linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9))",
       }}
     >
+      <div className="absolute top-0 left-0">
+        <Ellipse />
+      </div>
       <HeroBirds />
 
       <Header />
