@@ -8,18 +8,18 @@ export default function HeroBirds() {
   return (
     <div className="absolute inset-0 pointer-events-none z-5">
       {/* Upper left birds without speech bubbles */}
-      <div className="absolute top-[291px] left-[298px] opacity-60">
+      <div className="absolute top-[291px] left-[298px] opacity-60 animate-fly-from-bottom duration-200">
         <BirdIcon />
       </div>
-      <div className="absolute top-[329px] left-[495px] opacity-60">
+      <div className="absolute top-[329px] left-[495px] opacity-60 animate-fly-from-bottom duration-200">
         <BirdIcon />
       </div>
 
       {/* Upper right birds without speech bubbles */}
-      <div className="absolute top-[305px] left-[1406px] opacity-60">
+      <div className="absolute top-[305px] left-[1406px] opacity-60 animate-fly-from-bottom duration-200">
         <BirdIcon />
       </div>
-      <div className="absolute top-[465px] left-[1446px] opacity-60">
+      <div className="absolute top-[465px] left-[1446px] opacity-60 animate-fly-from-bottom duration-200">
         <BirdIcon />
       </div>
 
@@ -39,4 +39,3 @@ export default function HeroBirds() {
     </div>
   );
 }
-

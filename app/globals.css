@@ -38,3 +38,24 @@ body {
   color: var(--foreground);
   font-family: var(--font-general-sans);
 }
+
+@keyframes flyFromBottom {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: var(--bird-final-opacity, 1);
+  }
+}
+
+.animate-fly-from-bottom {
+  --bird-final-opacity: 1;
+  animation: flyFromBottom 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fly-from-bottom.opacity-60 {
+  --bird-final-opacity: 0.6;
+}
