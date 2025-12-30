@@ -20,14 +20,14 @@ export default function Hero() {
           "linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9))",
       }}
     >
-      <div className="absolute top-0 left-0">
+      <div className="absolute top-0 left-0 max-md:hidden">
         <Ellipse />
       </div>
       <HeroBirds />
 
       <Header />
 
-      <div className="max-w-4xl mx-auto text-center p-16 flex flex-col gap-6">
+      <div className="max-w-4xl mx-auto text-center p-4 md:p-8 lg:p-16 lg:pb-[54px] flex flex-col gap-6">
         <FeatureBadge />
         <HeroHeading />
         <HeroDescription />

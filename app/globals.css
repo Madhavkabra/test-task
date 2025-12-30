@@ -102,3 +102,33 @@ body {
   animation: flyDiagonalBottomRightToTopLeft 4s ease-out forwards;
   opacity: 0;
 }
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 0.3s ease-out forwards;
+}
+
+.animate-slide-in-top {
+  animation: slideInFromTop 0.3s ease-out forwards;
+}

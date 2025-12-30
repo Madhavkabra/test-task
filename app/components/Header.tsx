@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="relative z-10 flex justify-center pt-10">
-      <nav className="flex items-center justify-between p-5 pb-6 w-full max-w-[1200px] h-[81px] bg-white rounded-[200px] shadow-header">
+      <nav className="flex items-center justify-between py-2 px-4 md:p-5 md:pb-6 w-full max-w-[1200px] md:h-[81px] bg-white rounded-[200px] shadow-header relative">
         {/* Logo */}
         <Link href="/" className="flex items-center cursor-pointer">
           <Image src={logo} alt="Logo" width={100} height={100} />
@@ -86,7 +86,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden mt-3 pt-4 pb-3 border-t border-gray-200">
+        <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-lg pt-4 pb-3 px-4 animate-slide-in-top z-50">
           <div className="flex flex-col gap-3">
             <a
               href="#how-it-works"
@@ -116,7 +116,7 @@ export default function Header() {
             >
               FAQ
             </a>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-[43.62px] font-medium text-sm cursor-pointer flex items-center justify-center w-[138px] h-[41px] pt-[11px] pr-[18px] pb-[11px] pl-[18px] gap-[6.98px]">
+            <button className="bg-primary-color hover:opacity-90 text-white rounded-[43.62px] font-medium text-sm cursor-pointer flex items-center justify-center w-[138px] h-[41px] pt-[11px] pr-[18px] pb-[11px] pl-[18px] gap-[6.98px] transition-opacity">
               Contact Sales
             </button>
           </div>
