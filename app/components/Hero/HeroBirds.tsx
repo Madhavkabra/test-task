@@ -1,25 +1,22 @@
 import BirdIcon from "@/app/assets/icons/BirdIcon";
-import FlyingBird_1 from "@/app/assets/icons/FlyingBird_1";
-import FlyingBird_2 from "@/app/assets/icons/FlyingBird_2";
 import FlyingBird_3 from "@/app/assets/icons/FlyingBird_3";
-import FlyingBird_4 from "@/app/assets/icons/FlyingBird_4";
 
 export default function HeroBirds() {
   return (
-    <div className="absolute inset-0 pointer-events-none z-5 max-lg:hidden">
+    <div className="absolute inset-0 pointer-events-none z-5">
       {/* Upper left birds without speech bubbles */}
-      <div className="absolute top-[30%] left-[16%] opacity-60 animate-fly-from-bottom duration-200">
+      <div className="absolute top-[20%] left-[5%] md:left-[16%] opacity-60 animate-fly-from-bottom duration-200">
         <BirdIcon />
       </div>
-      <div className="absolute top-[34%] left-[28%] opacity-60 animate-fly-from-bottom duration-200">
+      <div className="absolute top-[38%] left-[7%] md:top-[34%] md:left-[28%] opacity-60 animate-fly-from-bottom duration-200">
         <BirdIcon />
       </div>
 
       {/* Upper right birds without speech bubbles */}
-      <div className="absolute top-[31%] left-[75%] opacity-60 animate-fly-from-bottom duration-200">
+      <div className="absolute top-[22%] left-[85%] md:top-[31%] md:left-[75%] opacity-60 animate-fly-from-bottom duration-200">
         <BirdIcon />
       </div>
-      <div className="absolute top-[48%] left-[77%] opacity-60 animate-fly-from-bottom duration-200">
+      <div className="absolute top-[40%] left-[86%] md:top-[48%] md:left-[77%] opacity-60 animate-fly-from-bottom duration-200">
         <BirdIcon />
       </div>     
 

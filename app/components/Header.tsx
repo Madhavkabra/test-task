@@ -8,8 +8,8 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative z-10 flex justify-center pt-10">
-      <nav className="flex items-center justify-between py-2 px-4 md:p-5 md:pl-6 w-full max-w-[1200px] md:h-[81px] bg-white rounded-[200px] shadow-header relative">
+    <header className="relative z-60 flex justify-center md:pt-10">
+      <nav className="flex items-center justify-between py-2 px-4 md:p-5 md:pl-6 w-full max-w-[1200px] md:h-[81px] bg-white md:rounded-[200px] shadow-header relative">
         {/* Logo */}
         <Link href="/" className="flex items-center cursor-pointer">
           <Image src={logo} alt="Logo" width={100} height={100} />
@@ -86,8 +86,8 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-lg pt-4 pb-3 px-4 animate-slide-in-top z-50">
-          <div className="flex flex-col gap-3">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg pt-4 pb-3 px-4 animate-slide-in-top">
+          <div className="flex flex-col gap-5">
             <Link
               href="#how-it-works"
               className="font-medium text-base leading-none cursor-pointer font-sans text-nav-text"

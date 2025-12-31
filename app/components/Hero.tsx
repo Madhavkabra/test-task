@@ -27,7 +27,7 @@ export default function Hero() {
 
       <Header />
 
-      <div className="max-w-4xl mx-auto text-center p-4 md:p-8 lg:p-16 lg:pb-[54px] flex flex-col gap-6">
+      <div className="max-w-4xl mx-auto text-center p-4 py-16 md:p-8 lg:p-16 lg:pb-[54px] flex flex-col gap-6">
         <FeatureBadge />
         <HeroHeading />
         <HeroDescription />

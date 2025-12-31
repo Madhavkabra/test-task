@@ -9,26 +9,27 @@ import ScrollIndicator from "./ScrollIndicator";
 export default function HeroClouds() {
   return (
     <div className="relative">
-      <div className="absolute top-[60%] left-[20%]">
+      <div className="absolute top-[0%] left-[5%] md:top-[60%] md:left-[20%]">
         <FlyingBird_1 />
       </div>
-      <div className="absolute top-[50%] left-[36%]">
+      <div className="absolute top-[25%] left-[30%] md:top-[50%] md:left-[36%] max-md:hidden">
         <FlyingBird_2 />
       </div>
-      <div className="absolute top-[80%] left-[65%]">
+      <div className="absolute top-[50%] left-[60%] md:top-[80%] md:left-[65%] max-md:hidden">
         <FlyingBird_3 />
       </div>
-      <div className="absolute top-[50%] left-[82%]">
+      <div className="absolute top-[90%] left-[60%] md:top-[50%] md:left-[82%]">
         <FlyingBird_4 />
       </div>
       <Image
-        className="w-full h-full object-cover object-bottom opacity-10"
         src={cloud1}
         alt="Cloud"
         width={1920}
         height={544}
+        className="max-md:hidden w-full h-full object-cover object-bottom opacity-10"
         priority
       />
+
       <ScrollIndicator />
     </div>
   );
