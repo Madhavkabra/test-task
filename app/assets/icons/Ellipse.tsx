@@ -15,7 +15,7 @@ function Ellipse() {
           rx="235.633"
           ry="220.881"
           fill="white"
-          fill-opacity="0.7"
+          fillOpacity="0.7"
         />
       </g>
       <defs>

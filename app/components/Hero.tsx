@@ -35,7 +35,7 @@ export default function Hero() {
       </div>
 
       <HeroClouds />
-      <ScrollIndicator />
+     
     </section>
   );
 }
