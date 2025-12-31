@@ -1,5 +1,34 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## About Coup
+
+Coup is an iMessage automation tool that lets you, your team, or AI workflows send iMessages directly from your phone number, running securely on your Mac or Mac Mini.
+
+## Hero Section
+
+The Hero section (`app/components/Hero.tsx`) is the main landing section of the application, featuring:
+
+### Components
+
+- **HeroHeading** - Displays the main headline: "iMessage Automation for Teams and AI Workflows"
+- **HeroDescription** - Provides a brief description of what Coup does
+- **FeatureBadge** - Shows a badge indicating "#1 iMessage Automation Tool"
+- **HeroCTAs** - Contains two call-to-action buttons:
+  - "Get Started" (primary button)
+  - "Download the Mac app" (secondary button with Apple logo)
+- **HeroBirds** - Animated bird icons positioned around the hero section for visual appeal
+- **HeroClouds** - Cloud background image with additional flying bird animations
+- **ScrollIndicator** - Scroll indicator at the bottom prompting users to "Scroll to learn more"
+- **Header** - Navigation header component
+- **Ellipse** - Decorative element (visible on desktop only)
+
+### Design Features
+
+- Full-screen section with blue gradient background (`#007AFF`)
+- Responsive design with mobile and desktop breakpoints
+- Animated elements including flying birds and scroll indicators
+- Modern UI with rounded buttons and smooth transitions
+
 ## Getting Started
 
 First, run the development server:
